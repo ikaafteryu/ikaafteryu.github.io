@@ -1,370 +1,272 @@
-@charset "UTF-8";    /* 文字コードの指定 */
-@import url('https://fonts.googleapis.com/css?family=Cardo');
-@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+@charset "UTF-8";
+/* 文字コードの指定 */
 
+@import url('https://fonts.googleapis.com/css?family=Cardo');
+@import 'https://fonts.googleapis.com/css?family=Abel';
+/* Google Fonts用のCSSを読み込み */
 /* ベースカラー；#f4f5f9 */
 /* サブカラー； #263959*/
 /* アクセントカラー；#f1404b*/
 
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+	font-size: 1.4rem;
+	line-height: 1.6;
+	letter-spacing: .1em;
+	color: #263959;
+	background-color: #f4f5f9;
+}
+nav .button {
+	font-size: 25px;
+	/* フォントサイズ */
+	
+	line-height: 0;
+	/* 行の高さ */
+	
+	display: block;
+	/* ブロック要素のように扱う */
+	
+	float: right;
+	/* 要素を右寄せ */
+	
+	width: 20px;
+	/* 幅 */
+	
+	height: 20px;
+	/* 高さ */
+	
+	margin: 20px 20px 0px 0;
+	/* 要素の外側の余白 */
+	
+	padding: 10px;
+	/* 要素の内側の余白 */
+	
+	text-align: center;
+	/* テキストの中央寄せ */
+	
+	color: inherit;
+	/* 文字色 */
+}
+a:hover {
+	color: #f1404b;
+}
+header .profile-icon {
+	margin: 20px auto;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.block-center, section .container, .skill-box i {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.abel, section h2 {
+	font-size: 3.2rem;
+	font-family: 'Cardo', serif;
+}
+header .profile {
+	clear: both;
+	width: 60%;
+	margin: 0 auto;
+	/* ボックスを中央寄せ */
+	
+	text-align: center;
+}
 
+.uppercase, section h2, #skills h3, #works .works-box a .works-box-inner .button-readmore {
+	text-transform: uppercase;
+}
+#skills h3 {
+	font-family: 'Cardo', serif;
+}
+.text-center {
+	text-align: center;
+}
+header .profile span {
+	font-size: 4.2rem;
+	color: #f1404b;
+}
+section
+/*セッション共通要素*/
 
-
-html
 {
-    font-size: 62.5%;
-    
+	padding: 60px 0;
 }
-
-body
+section .container
+/*セッション共通要素*/
 {
-    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.6;
-    letter-spacing: .1em;
-    
-    color:#263959;
-    background-color:#f4f5f9;
+	width: 90%;
+	/* sectionの中のインナーボックスをウィンドウ幅に対して90%に */
 }
+#skills {
+	margin-top: 50px;
+	background-color: #f1404b;
+}
+#skills .container {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	
+}
+#skills h2 {
+	margin-bottom: 60px;
+	color: #f4f5f9;
+}
+#skills .skill-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-flex: 1;
+	flex: 1;
+	margin: 0px 20px;
+	padding: 20px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #f4f5f9;
+}
+#skills i {
+	font-size: 4.5rem;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 80px;
+	height: 80px;
+	margin-bottom: 5px;
+	padding-top: 15px;
+	text-align: center;
+	color: #263959;
+}
+#skills h3 {
+	font-size: 2.0rem;
+	margin-bottom: 10px;
+}
+#works {
+	padding-bottom: 0;
+	color: #263959;
+}
+#works h2 {
+	margin-bottom: 50px;
+}
+#works .works-box {
+	float: left;
+	width: 33.33333%;
+	height: 100%;
+}
+#works::after
+/*floatしている要素の親要素#worksにclearfixを適用*/
 
-
-nav .button
 {
-    font-size: 25px; /* フォントサイズ */
-    line-height: 0; /* 行の高さ */
-    display: block; /* ブロック要素のように扱う */
-    float: right; /* 要素を右寄せ */
-
-    width: 20px; /* 幅 */
-    height: 20px; /* 高さ */
-    margin: 20px 20px 0px 0; /* 要素の外側の余白 */
-    padding: 10px; /* 要素の内側の余白 */
-
-    text-align: center; /* テキストの中央寄せ */
-
-    color: inherit; /* 文字色 */
-   
-
-    
+	display: block;
+	clear: both;
+	content: '';
 }
-a :hover
-{
-    color:#f1404b;
+#works .works-box a {
+	position: relative;
+	display: block;
 }
- 
- header .profile-icon
-{
-   
-    margin: 20px auto;
-    -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
+#works .works-box a .works-box-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	height: 100%;
+	color: #fff;
+	background-color: rgba(0, 0, 0, .7);
 }
-
- .block-center,
- section .container
- .skill-box i
- {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+#works .works-box a .works-box-inner div {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 40%;
+	margin: auto;
+	padding: 10px 20px;
 }
-
-.abel,
-section h2
-{
-     font-size: 3.2rem;
-     font-family: 'Cardo', serif;
+#works .works-box a .works-box-inner h3 {
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #f1404b;
+	margin: 0 0 5px;
 }
-
-header .profile
-{
-    clear: both;
-    width: 60%;
-    margin: 0 auto; /* ボックスを中央寄せ */
-    text-align: center;
+#works .works-box a .works-box-inner small {
+	font-size: 1rem;
+	color: #f1404b;
+	display: block;
+	margin-bottom: 15px;
 }
-header.title{
-    font-size: 1.8rem;
-    line-height: normal;
-    text-align: center;
-    width:70%;
-  
+#works .works-box a .works-box-inner .button-readmore {
+	font-size: 1rem;
+	font-weight: bold;
+	display: block;
+	width: 180px;
+	margin: auto;
+	padding: 5px 0;
+	text-align: center;
+	color: #f1404b;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #f4f5f9;
 }
- 
- .uppercase,
-section h2,
-#skills h3,
-#works .works-box a .works-box-inner .button-readmore
-{
-    text-transform: uppercase;
+#works .works-box img {
+	display: block;
+	max-width: 100%;
 }
-
-#skills h3{
- font-family: 'Cardo', serif;
+#works .works-box a:hover .works-box-inner {
+	display: block;
+	width: 100%;
 }
-
-.text-center{
-    text-align: center;
-    
+#works .works-box a .works-box-inner .button-readmore:hover {
+	color: #263959;
 }
-
-header .profile span{
-    font-size: 4.2rem;
-    color:#f1404b;
-    
+#contact ul {
+	margin-top: 30px;
+	text-align: center;
 }
-
-section /*セッション共通要素*/
-{
-     padding: 60px 0; 
+#contact ul .mail, #contact ul .github, #contact ul .instagram, #contact ul .skype {
+	font-size: 4.2rem;
 }
-
-section .container　/*セッション共通要素*/
-{
-    width: 90%; /* sectionの中のインナーボックスをウィンドウ幅に対して90%に */
+#contact ul .github i {
+	margin-left: 2px;
 }
-
-#skills
-{
-    margin-top:50px;
-    background-color:#f1404b;
+#contact ul li {
+	font-size: 2.8rem;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-right: 20px;
+	text-align: center;
+	vertical-align: top;
 }
-#skills .container
-{
-    display: -webkit-flex;
-    display:         flex;
-
-    justify-content: space-between;
+#contact ul li:last-child {
+	margin-right: 0;
 }
-#skills h2
-{
-    margin-bottom: 60px;
-    color:  #f4f5f9;
+#contact ul a {
+	display: block;
+	color: #263959;
+	width: 50px;
+	height: 50px;
 }
-
-
-#skills .skill-box
-{
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    -webkit-flex: 1;
-            flex: 1;
-    margin: 0px 10px;
-    padding: 20px;
-
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-        background-color:#f4f5f9;     
-    
+#contact ul a:hover {
+	color: #f1404b;
 }
-
-#skills i
-{
-    font-size: 4.5rem;
-
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 5px;
-    padding-top: 15px;
-
-    text-align: center;
-    color: #263959;
-    
-   
-   
+footer {
+	font-weight: 300;
+	font-size: 14px;
+	color: #f1404b;
+	margin: 30px 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'Cardo', serif;
 }
-#skills h3
-{
-    font-size: 2.0rem;
-    margin-bottom: 10px;
-}
-
-#works
-{
-    padding-bottom: 0;
-    color:#263959;
-}
-
-#works h2
-{
-    margin-bottom: 50px;
-}
-
-#works .works-box
-{
-    float: left;
-
-    width: 33.33333%;
-    height: 100%;
-}
-
-#works::after  /*floatしている要素の親要素#worksにclearfixを適用*/
-{
-    display: block;
-    clear: both;
-
-    content: '';
-}
-#works .works-box a
-{
-    position: relative;
-
-    display: block;
-}
-
-#works .works-box a .works-box-inner
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    display: none;
-
-    height: 100%;
-
-    color: #fff;
-    background-color: rgba(0, 0, 0, .7);
-}
-
-#works .works-box a .works-box-inner div
-{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    height: 40%;
-    margin: auto;
-    padding: 10px 20px;
-}
-
-#works .works-box a .works-box-inner h3
-{
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #f1404b;
-    margin: 0 0 5px;
-}
-#works .works-box a .works-box-inner small
-{
-    font-size: 1rem;
- color: #f1404b;
-    display: block;
-
-    margin-bottom: 15px;
-}
-#works .works-box a .works-box-inner .button-readmore
-{
-    font-size: 1rem;
-    font-weight: bold;
-
-    display: block;
-
-    width: 180px;
-    margin: auto;
-    padding: 5px 0;
-
-    text-align: center;
-
-    color:#f1404b;
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
-    background-color: #f4f5f9;
-}
-#works .works-box img
-{
-    display: block;
-
-    max-width: 100%;
-}
-
-#works .works-box a:hover .works-box-inner
-{
-    display: block;
-
-    width: 100%;
-}
-
-#works .works-box a .works-box-inner .button-readmore:hover
-{
-    color: #263959;
-}
-
-#contact ul
-{
-    margin-top: 30px;
-    text-align: center;
-}
-
-#contact ul .mail,
-#contact ul .github,
-#contact ul .instagram,
-#contact ul .skype
-{
-    font-size: 4.2rem;
-    
-}
-#contact ul .github i
-{
-    margin-left: 2px;
-    
-}
-
-#contact ul li{
-    font-size: 2.8rem;
-    
-    display: inline-block;
-
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-    margin-right: 20px;
-
-    text-align: center;
-    vertical-align: top;
-    
-}
-#contact ul li:last-child
-{
-    margin-right: 0;
-}
-
-
-#contact ul a
-{
-    display: block;
-    color:#263959;
-    width: 50px;
-    height: 50px;
-
-}
-#contact ul a:hover
-{
-     color: #f1404b;
-}
-
-
-
-footer 
-{
-
-    font-weight: 300;
-    font-size: 14px;
-    color: #f1404b;
-    margin: 30px 0;
-    width: 100%;
-    text-align: center;
-     font-family: 'Cardo', serif;
-}
-
-small #copyright{
-    text-align: center;
-     font-family: 'Cardo', serif;
+small #copyright {
+	text-align: center;
+	font-family: 'Cardo', serif;
 }
