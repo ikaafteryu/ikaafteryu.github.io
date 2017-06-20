@@ -203,7 +203,8 @@ section {
           background-color: #f4f5f9; }
     #works .works-box img {
       max-width: 100%;
-      display: block; }
+      display: block;
+      }
   #works::after {
     content: '';
     display: block;

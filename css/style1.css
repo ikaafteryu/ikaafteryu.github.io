@@ -1,0 +1,146 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Cardo");
+/* Google Fonts用のCSSを読み込み */
+html {
+  font-size: 70%; }
+
+body {
+  color: #1F2124;
+  font-family: "Source Sans Pro", sans-serif, "Khula", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #FFFFF3; }
+
+a {
+  text-decoration: none; }
+
+/* Align
+------------------------------------------------------------*/
+.abel, h2, #article h3, #article small, #subscribe .subscribe-box h3, #subscribe .subscribe-box .button-subscribe {
+  font-family: 'Cardo', serif; }
+
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, #article .container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.uppercase, h2, #article h3, #subscribe .subscribe-box .button-subscribe {
+  text-transform: uppercase; }
+
+/* Header
+------------------------------------------------------------*/
+header .title {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(../images/title.png);
+  background-size: cover; }
+  header .title .button {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    color: #1F2124;
+    text-align: center;
+    font-size: 25px;
+    line-height: 0;
+    display: block;
+    float: right;
+    margin: 20px 20px 0px 0px; }
+    header .title .button:visited {
+      color: #1F2124; }
+    header .title .button:hover {
+      color: #f9d423; }
+
+@media (max-width: 768px) {
+  header .title {
+    width: 100%;
+    height: 250px;
+    background-position: 22% center;
+    background-size: cover; } }
+/* Contents
+------------------------------------------------------------*/
+h2 {
+  font-size: 3.2rem; }
+
+#article {
+  margin-top: 50px; }
+  #article .container {
+    width: 90%;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #article h2 {
+    margin-bottom: 60px;
+    color: #1F2124; }
+  #article .article-box {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 20px 0;
+    padding: 30px; }
+  #article h3 {
+    font-size: 2.0rem;
+    margin-bottom: 20px; }
+  #article small {
+    width: 85px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 10px; }
+
+@media (min-width: 769px) {
+  #article .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #article .article-box {
+    margin: 0 10px 50px 10px; } }
+#subscribe {
+  background-color: #f9d423; }
+  #subscribe .subscribe-box {
+    padding: 20px; }
+    #subscribe .subscribe-box h3 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #1F2124;
+      margin: 0 0 15px; }
+    #subscribe .subscribe-box .button-subscribe {
+      font-size: 1rem;
+      font-weight: bold;
+      display: block;
+      width: 180px;
+      margin: auto;
+      padding: 5px 0;
+      text-align: center;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      color: #f9d423;
+      background-color: #FFFFF3; }
+      #subscribe .subscribe-box .button-subscribe:visited {
+        color: #f9d423; }
+      #subscribe .subscribe-box .button-subscribe:hover {
+        color: #1F2124; }
+
+footer {
+  font-weight: 300;
+  font-size: 14px;
+  color: #1F2124;
+  margin: 30px 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Cardo', serif; }
+
+/*# sourceMappingURL=style.css.map */
